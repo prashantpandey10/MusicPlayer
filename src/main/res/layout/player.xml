@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#fff"
+
+    >
+
+    <ImageButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:src="@drawable/icon1"
+        android:id="@+id/next"
+        android:layout_alignTop="@+id/play"
+        android:layout_toRightOf="@+id/play"
+        android:layout_toEndOf="@+id/play" />
+
+    <ImageButton
+
+        android:padding="0dp"
+        android:id="@+id/back"
+        android:src="@drawable/icon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pause"
+        android:layout_toLeftOf="@+id/play"
+        android:layout_toStartOf="@+id/play" />
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/back"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageButton
+        android:padding="0dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon3"
+        android:id="@+id/pause"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <ImageButton
+        android:padding="0dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon4"
+        android:id="@+id/play"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/seekbar"
+        android:layout_alignRight="@+id/pause"
+        android:layout_alignEnd="@+id/pause" />
+    <ImageButton
+        android:padding="0dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon5"
+        android:id="@+id/headphones"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_toRightOf="@+id/next"
+        android:layout_toEndOf="@+id/next" />
+    <ImageButton
+        android:padding="0dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon6"
+        android:id="@+id/speakers"
+        android:visibility="visible"
+
+
+        android:layout_toEndOf="@+id/next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/next" />
+
+
+    <ImageButton
+        android:padding="0dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon7"
+        android:id="@+id/shuffle"
+
+
+        android:layout_toStartOf="@+id/back"
+        android:layout_alignBottom="@+id/headphones"
+        android:layout_toLeftOf="@+id/back" />
+
+</RelativeLayout>
